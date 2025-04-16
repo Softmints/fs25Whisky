@@ -1,10 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
     <fillTypes>
-        <fillType name="WHISKY_SPIRIT" title="$l10n_fillType_whisky_spirit" category="liquid" pricePerLiter="3.5" massPerLiter="0.95" showOnPriceTable="true" useForFieldJob="false" unit="LITER" hudFile="$dataS/menu/hud/fillTypes/hud_fill_water.png" fillSoundIdentifier="LIQUID" allowsFillFromAir="false" liquid="true" />
+        <fillType name="WHISKY_SPIRIT" title="Whisky Spirit" showOnPriceTable="false" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="1.00" maxPhysicalSurfaceAngle="0" />
+            <economy pricePerLiter="0.1">
+                <factors>
+                    <factor period="1" value="0.95" />
+                    <factor period="2" value="0.97" />
+                    <factor period="3" value="1.00" />
+                    <factor period="4" value="1.00" />
+                    <factor period="5" value="1.05" />
+                    <factor period="6" value="1.10" />
+                    <factor period="7" value="1.15" />
+                    <factor period="8" value="1.10" />
+                    <factor period="9" value="1.10" />
+                    <factor period="10" value="1.05" />
+                    <factor period="11" value="1.00" />
+                    <factor period="12" value="0.97" />
+                </factors>
+            </economy>
+            <image hud="$dataS/menu/hud/fillTypes/hud_fill_water.png" />
+        </fillType>
     </fillTypes>
 
     <fillTypeCategories>
         <fillTypeCategory name="LIQUID">WHISKY_SPIRIT</fillTypeCategory>
     </fillTypeCategories>
+
+    <fillTypeSounds>
+        <fillTypeSound fillTypes="WHISKY_SPIRIT">
+            <sound template="defaultRefuelSound"/>
+        </fillTypeSound>
+    </fillTypeSounds>
 </map>
