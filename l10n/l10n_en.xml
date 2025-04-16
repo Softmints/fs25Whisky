@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<l10n>
+    <text name="placeable_whiskyDistillery">
+        <en>Whisky Distillery</en>
+    </text>
+    <text name="production_whiskyProduction">
+        <en>Whisky Distillation</en>
+    </text>
+    <text name="fillType_whiskyRaw">
+        <en>Raw Whisky</en>
+    </text>
+</l10n>

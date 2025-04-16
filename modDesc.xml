@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="96" modName="FS25_GlenValleyDistillery">
+    <author>Softmints</author>
+    <version>1.0.0.0</version>
+    <title>
+        <en>Glen Valley Distillery</en>
+    </title>
+    <description>
+        <en>Adds a traditional Speyside whisky production chain, starting from barley and water to fine aged whisky.</en>
+    </description>
+
+    <iconFilename>icon.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <storeItems>
+        <storeItem xmlFilename="maps/placeables/whisky_distillery/whiskyDistillery.xml" />
+    </storeItems>
+
+    <placeables>
+        <placeable filename="maps/placeables/whisky_distillery/whiskyDistillery.xml" />
+    </placeables>
+
+    <productionChains>
+        <productionChain filename="productionChains/whiskyProduction.xml" />
+    </productionChains>
+
+    <fillTypes filename="fillTypes.xml" />
+
+    <l10n filenamePrefix="l10n/l10n" />
+</modDesc>

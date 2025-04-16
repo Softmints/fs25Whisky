@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<productionChain>
+    <production name="$l10n_production_whiskyProduction">
+        <inputs>
+            <input fillType="BARLEY" amount="500" />
+            <input fillType="WATER" amount="250" />
+        </inputs>
+        <outputs>
+            <output fillType="WHISKY_RAW" amount="300" />
+        </outputs>
+        <productionCosts pricePerHour="10" />
+    </production>
+</productionChain>
