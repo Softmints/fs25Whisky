@@ -9,4 +9,7 @@
     <text name="fillType_whiskyRaw">
         <en>Raw Whisky</en>
     </text>
+    <text name="fillType_whisky_spirit">
+        <en>Whisky Spirit</en>
+    </text>
 </l10n>

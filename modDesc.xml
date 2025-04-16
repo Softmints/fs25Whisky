@@ -9,9 +9,13 @@
         <en>Adds a traditional Speyside whisky production chain, starting from barley and water to fine aged whisky.</en>
     </description>
 
+    <l10n filenamePrefix="l10n/l10n" />
+
     <iconFilename>icon.dds</iconFilename>
 
     <multiplayer supported="true"/>
+
+    <fillTypes filename="fillTypes.xml" />
 
     <storeItems>
         <storeItem xmlFilename="maps/placeables/whisky_distillery/whiskyDistillery.xml" />
@@ -24,8 +28,4 @@
     <productionChains>
         <productionChain filename="productionChains/whiskyProduction.xml" />
     </productionChains>
-
-    <fillTypes filename="fillTypes.xml" />
-
-    <l10n filenamePrefix="l10n/l10n" />
 </modDesc>

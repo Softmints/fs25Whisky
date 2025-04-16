@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <productionChain>
-    <production name="$l10n_production_whiskyProduction">
+    <production id="WHISKY_DISTILLATION" name="$l10n_production_whiskyProduction" cyclesPerHour="8" costsPerActiveHour="50">
         <inputs>
-            <input fillType="BARLEY" amount="500" />
-            <input fillType="WATER" amount="250" />
+            <input fillType="GRIST" amount="100"/>
+            <input fillType="WATER" amount="50"/>
         </inputs>
         <outputs>
-            <output fillType="WHISKY_RAW" amount="300" />
+            <output fillType="WHISKY_SPIRIT" amount="100"/>
         </outputs>
-        <productionCosts pricePerHour="10" />
     </production>
 </productionChain>

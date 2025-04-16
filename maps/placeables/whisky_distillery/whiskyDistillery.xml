@@ -2,7 +2,7 @@
 <placeable type="productionPoint"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>Whisky Distillery</name>
+        <name>$l10n_placeable_whiskyDistillery</name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
@@ -70,7 +70,7 @@
                     <input fillType="WATER" amount="50" />
                 </inputs>
                 <outputs>
-                    <output fillType="WHISKY_RAW" amount="150" />
+                    <output fillType="WHISKY_SPIRIT" amount="100" />
                 </outputs>
             </production>
         </productions>
@@ -78,10 +78,9 @@
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="BARLEY" capacity="240000" />
             <capacity fillType="WATER" capacity="100000" />
-            <capacity fillType="WHISKY_RAW" capacity="255000" />
+            <capacity fillType="WHISKY_SPIRIT" capacity="255000" />
         </storage>
 
-        <!-- TODO - Check appearsOnStats -->
         <sellingStation node="sellingStation" supportsExtension="false" appearsOnStats="true">
             <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="BARLEY WATER"/>
             <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="BARLEY WATER"/>
