@@ -5,5 +5,4 @@
         <unit>liter</unit>
         <category name="liquid" />
     </fillType>
-    <fillType name="WHISKY_SPIRIT" title="$l10n_fillType_whiskySpirit" category="liquid" pricePerLiter="3.5" massPerLiter="0.95" showOnPriceTable="true" useForFieldJob="false" unit="LITER" hudFile="dataS2/menu/hud/fillTypes/hud_fill_milk.png" fillSoundIdentifier="LIQUID" allowsFillFromAir="false" liquid="true" />
 </fillTypes>
