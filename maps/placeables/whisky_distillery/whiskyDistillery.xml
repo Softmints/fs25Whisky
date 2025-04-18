@@ -87,7 +87,7 @@
         </sellingStation>
 
         <loadingStation node="whiskyDistillery" fillTypes="WHISKY_SPIRIT">
-            <loadTrigger triggerNode="liquidLoadingTrigger" fillTypes="WHISKY_SPIRIT" fillLitersPerSecond="200" autoStart="true"/>
+            <loadTrigger triggerNode="liquidLoadingTrigger" fillTypes="WHISKY_SPIRIT" fillLitersPerSecond="200" autoStart="false"/>
         </loadingStation>
 
         <!-- <palletSpawner>
