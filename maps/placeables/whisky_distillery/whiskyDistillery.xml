@@ -86,8 +86,8 @@
             <!-- <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="BARLEY WATER"/> -->
         </sellingStation>
 
-        <loadingStation node="whiskyDistillery" fillTypes="WHISKY_SPIRIT">
-            <loadTrigger triggerNode="liquidLoadingTrigger" fillTypes="WHISKY_SPIRIT" fillLitersPerSecond="200" autoStart="false"/>
+        <loadingStation node="loadingStation" fillTypes="WHISKY_SPIRIT">
+            <loadTrigger triggerNode="exactLoadFillNode" fillTypes="WHISKY_SPIRIT" fillLitersPerSecond="200" autoStart="true"/>
         </loadingStation>
 
         <!-- <palletSpawner>
@@ -105,9 +105,9 @@
     </productionPoint>
 
     <triggerMarkers>
-        <!-- <triggerMarker node="warningStripes01"/> -->
         <triggerMarker node="playerTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconWrench.i3d"/>
         <triggerMarker node="unloadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconUnload.i3d"/>
+        <triggerMarker node="loadTriggerMarker" adjustToGround="true" filename="$data/shared/assets/marker/markerIconWater.i3d"/>
     </triggerMarkers>
 
     <hotspots>
@@ -136,19 +136,15 @@
         <i3dMapping id="infoTrigger" node="0>5" />
         <i3dMapping id="sellingStation" node="0>6" />
         <i3dMapping id="exactFillNode" node="0>6|0" />
-        <i3dMapping id="liquidLoadingTrigger" node="0>11" />
-        <i3dMapping id="unloadTriggerMarker" node="0>6|0|0" />
-        <i3dMapping id="unloadTriggerAINode" node="0>6|0|1" />
-        <!-- <i3dMapping id="palletTrigger" node="0>6|1" /> -->
+        <i3dMapping id="loadingStation" node="0>8" />
+        <i3dMapping id="exactLoadFillNode" node="0>8|0" />
+        <i3dMapping id="iconGroup" node="0>11" />
+        <i3dMapping id="loadTriggerMarker" node="0>11|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>11|1" />
+        <i3dMapping id="unloadTriggerAINode" node="0>6|0|0" />
         <i3dMapping id="productionPoint" node="0>7" />
         <i3dMapping id="playerTrigger" node="0>7|0" />
         <i3dMapping id="playerTriggerMarker" node="0>7|0|0" />
-        <!-- <i3dMapping id="palletSpawner" node="0>8" />
-        <i3dMapping id="palletAreaStart01" node="0>8|0" />
-        <i3dMapping id="palletAreaEnd01" node="0>8|0|0" />
-        <i3dMapping id="palletAreaStart02" node="0>8|1" />
-        <i3dMapping id="palletAreaEnd02" node="0>8|1|0" /> -->
-        <!-- <i3dMapping id="warningStripes01" node="0>8|2" /> -->
     </i3dMappings>
 </placeable>
 
