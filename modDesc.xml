@@ -31,4 +31,8 @@
     <productionChains>
         <productionChain filename="productionChains/whiskyProduction.xml" />
     </productionChains>
+
+    <extraSourceFiles>
+        <sourceFile filename="FS25_GlenValleyDistillery.lua" />
+    </extraSourceFiles>
 </modDesc>
