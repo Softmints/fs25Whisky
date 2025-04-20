@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
     <fillTypes>
-        <fillType name="WHISKY_SPIRIT" title="Whisky Spirit" showOnPriceTable="false" isBulkType="true" unitShort="$l10n_unit_literShort">
+        <fillType name="WHISKY_SPIRIT" title="Whisky Spirit" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
             <physics massPerLiter="1.00" maxPhysicalSurfaceAngle="0" />
             <economy pricePerLiter="0.1">
                 <factors>
@@ -19,7 +19,31 @@
                     <factor period="12" value="0.97" />
                 </factors>
             </economy>
-            <image hud="$dataS/menu/hud/fillTypes/hud_fill_water.png" />
+            <image hud="maps/placeables/icons/whisky_spirit_hud_icon.dds" />
+        </fillType>
+
+        <fillType name="GRIST" title="Grist" showOnPriceTable="true" isBulkType="true" unitShort="$l10n_unit_literShort">
+            <physics massPerLiter="1.5" maxPhysicalSurfaceAngle="40" />
+            <economy pricePerLiter="0.05">
+                <factors>
+                    <factor period="1" value="1.00"/>
+                    <factor period="2" value="1.02"/>
+                    <factor period="3" value="0.98"/>
+                    <factor period="4" value="0.99"/>
+                    <factor period="5" value="0.96"/>
+                    <factor period="6" value="1.00"/>
+                    <factor period="7" value="0.99"/>
+                    <factor period="8" value="1.01"/>
+                    <factor period="9" value="0.98"/>
+                    <factor period="10" value="0.99"/>
+                    <factor period="11" value="1.01"/>
+                    <factor period="12" value="1.01"/>
+                </factors>
+            </economy>
+            <image hud="maps/placeables/icons/grist_hud_icon.dds" />
+            <effects>
+                <alphaClip beltAlphaScale="0.36"/>
+            </effects>
         </fillType>
     </fillTypes>
 

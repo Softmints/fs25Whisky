@@ -3,6 +3,12 @@
     <text name="placeable_whiskyDistillery">
         <en>Whisky Distillery</en>
     </text>
+    <text name="placeable_gristMill">
+        <en>Grist Mill</en>
+    </text>
+    <text name="storeItem_gristBoxPallet">
+        <en>Grist Pallet</en>
+    </text>
     <text name="production_whiskyProduction">
         <en>Whisky Distillation</en>
     </text>

@@ -12,21 +12,21 @@
 ## 🔧 In Progress / To Do
 
 ### 🧱 Visual / I3D Adjustments
-- [ ] Flip the **unload marker** (currently upside down)
-- [ ] **Resize the unloading area** — current trigger zone is too large
+- [x] Flip the **unload marker** (currently upside down)
+- [x] **Resize the unloading area** — current trigger zone is too large
 
 ### 🔄 Production Logic
-- [ ] Replace **Barley with Grist**
-- [ ] Define `GRIST` as a fillType (if not already)
-- [ ] Add to `fillTypes.xml` and `extraTypes.xml`
-- [ ] Update the production recipe to use `GRIST` instead of `BARLEY`
+- [x] Replace **Barley with Grist**
+- [x] Define `GRIST` as a fillType (if not already)
+- [x] Add to `fillTypes.xml`
+- [x] Update the production recipe to use `GRIST` instead of `BARLEY`
 
 ### 🛻 Loading & Logistics
-- [ ] Confirm if **Whisky Spirit loading point works**
-- [ ] Create or duplicate **liquid trailers** that support `WHISKY_SPIRIT`
-- [ ] Clone a base game tanker
-- [ ] Add `WHISKY_SPIRIT` to its `fillTypes`
-- [ ] Test in-game with loading from the factory
+- [x] Confirm if **Whisky Spirit loading point works**
+- [x] Create or duplicate **liquid trailers** that support `WHISKY_SPIRIT`
+- [x] Clone a base game tanker
+- [x] Add `WHISKY_SPIRIT` to its `fillTypes`
+- [x] Test in-game with loading from the factory
 
 ---
 
