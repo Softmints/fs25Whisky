@@ -35,6 +35,19 @@
   - Trailers that support `BARLEY` also support `GRIST`
   - Trailers that support `WATER` also support `WHISKY_SPIRIT`
 
+### Lua System (Paused)
+- Add all trailers that accept `BARLEY` to also accept `GRIST` via script
+- Add all trailers that accept `WATER` to also accept `WHISKY_SPIRIT` via script
+- Further FS25 scripting hook documentation is required
+- Temporarily replaced with dedicated modified vehicle XMLs for testing
+
+### Next Priorities
+- [ ] Duplicate base-game trailers and extend them to support `GRIST` and `WHISKY_SPIRIT`
+- [ ] Finalize unloading/loading areas in Grist Mill model
+- [ ] Review and confirm scaling/rotation of in-game trigger markers
+- [ ] Confirm correct storage behavior for new fill types
+- [ ] Create marketing materials and branding visuals for Glen Valley
+
 ---
 
 ## 🧪 Optional / Future Enhancements
