@@ -49,6 +49,7 @@
 
     <fillTypeCategories>
         <fillTypeCategory name="LIQUID">WHISKY_SPIRIT</fillTypeCategory>
+        <fillTypeCategory name="BULK">GRIST</fillTypeCategory>
     </fillTypeCategories>
 
     <fillTypeSounds>

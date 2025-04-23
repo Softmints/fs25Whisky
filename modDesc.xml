@@ -20,7 +20,8 @@
     <storeItems>
         <storeItem xmlFilename="maps/placeables/whisky_distillery/whiskyDistillery.xml" />
         <storeItem xmlFilename="maps/placeables/grist_mill/gristMill.xml" />
-        <storeItem xmlFilename="vehicles/whiskyTrailer/whiskyTrailer.xml"/>
+        <storeItem xmlFilename="vehicles/whiskyTrailer/small/whiskyTrailerSmall.xml"/>
+        <storeItem xmlFilename="vehicles/whiskyTrailer/large/whiskyTrailerLarge.xml"/>
     </storeItems>
 
     <placeables>
