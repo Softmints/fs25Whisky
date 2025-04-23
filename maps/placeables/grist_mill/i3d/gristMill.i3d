@@ -251,7 +251,7 @@
         <Shape name="tipCollision" translation="0.172258 0 0.185709" shapeId="19" static="true" collisionFilterGroup="0x8" collisionFilterMask="0x1" nodeId="117" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="11"/>
       </TransformGroup>
       <TransformGroup name="loadingStation" translation="0 0 6.03482" nodeId="118">
-        <Shape name="exactLoadTrigger" translation="6.32889 -0.548642 -10.6827" scale="10.9378 1.35018 4.88114" shapeId="20" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="119" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="17"/>
+        <Shape name="exactLoadTrigger" translation="-15.3662 2.92401 -7.3246" scale="6.81798 6.82694 9.35247" shapeId="20" static="true" trigger="true" collisionFilterGroup="0x20000000" collisionFilterMask="0x40000000" nodeId="119" castsShadows="false" receiveShadows="false" nonRenderable="true" distanceBlending="false" materialIds="17"/>
       </TransformGroup>
     </TransformGroup>
     <ReferenceNode name="gristMillProps" referenceId="55" nodeId="149"/>
