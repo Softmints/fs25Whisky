@@ -33,7 +33,9 @@
 - [ ] Change distillery to hold WHISKY_SPIRIT as an input
 - [ ] Add new 'recipe' to distillery for barreling
 - [ ] Accept barrels from cooperage in distillery
-- [ ] Output barrels 
+- [ ] Output barrels
+- [ ] Fix WHISKY_SPIRIT icon
+- [ ] Fix l10n issues
 
 ---
 

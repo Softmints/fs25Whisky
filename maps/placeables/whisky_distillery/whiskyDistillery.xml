@@ -64,13 +64,23 @@
 
     <productionPoint>
         <productions>
-            <production id="WHISKY" name="Whisky Production" cyclesPerHour="30" costsPerActiveHour="5">
+            <production id="WHISKY_SPIRIT_RAW_PROD" name="Whisky Spirit" cyclesPerHour="30" costsPerActiveHour="5">
                 <inputs>
                     <input fillType="GRIST" amount="100" />
                     <input fillType="WATER" amount="50" />
+                    <input fillType="FLOUR" amount="50" />
                 </inputs>
                 <outputs>
                     <output fillType="WHISKY_SPIRIT" amount="200" />
+                </outputs>
+            </production>
+            <production id="WHISKY_BARREL_NOAGE_PROD" name="Whisky Barreling" cyclesPerHour="30" costsPerActiveHour="5">
+                <inputs>
+                    <input fillType="WHISKY_SPIRIT" amount="1000" />
+                    <input fillType="BARREL" amount="4" />
+                </inputs>
+                <outputs>
+                    <output fillType="WHISKY_BARREL_NOAGE" amount="1000" />
                 </outputs>
             </production>
         </productions>
@@ -79,15 +89,18 @@
             <capacity fillType="GRIST" capacity="240000" />
             <capacity fillType="WATER" capacity="100000" />
             <capacity fillType="WHISKY_SPIRIT" capacity="100000" />
+            <capacity fillType="BARREL" capacity="100000" />
+            <capacity fillType="FLOUR" capacity="100000" />
+            <capacity fillType="WHISKY_BARREL_NOAGE" capacity="1000000" />
         </storage>
 
-        <sellingStation node="sellingStation" supportsExtension="false" appearsOnStats="true">
-            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="GRIST WATER"/>
-            <!-- <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="BARLEY WATER"/> -->
+        <sellingStation node="sellingStation" supportsExtension="false" appearsOnStats="true" allowMissions="false">
+            <unloadTrigger exactFillRootNode="exactFillNode" aiNode="unloadTriggerAINode" fillTypes="GRIST WATER WHISKY_SPIRIT"/>
+            <palletTrigger triggerNode="palletTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR BARREL"/>
         </sellingStation>
 
         <loadingStation node="loadingStation" fillTypes="WHISKY_SPIRIT">
-            <loadTrigger triggerNode="exactLoadFillNode" fillTypes="WHISKY_SPIRIT" fillLitersPerSecond="200" autoStart="true"/>
+            <loadTrigger triggerNode="exactLoadFillNode" fillTypes="WHISKY_SPIRIT WHISKY_BARREL_NOAGE" fillLitersPerSecond="200" autoStart="true"/>
         </loadingStation>
 
         <!-- <palletSpawner>
@@ -136,6 +149,7 @@
         <i3dMapping id="infoTrigger" node="0>5" />
         <i3dMapping id="sellingStation" node="0>6" />
         <i3dMapping id="exactFillNode" node="0>6|0" />
+        <i3dMapping id="palletTrigger" node="0>6|0|1" />
         <i3dMapping id="loadingStation" node="0>8" />
         <i3dMapping id="exactLoadFillNode" node="0>8|0" />
         <i3dMapping id="iconGroup" node="0>11" />
